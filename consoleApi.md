@@ -142,4 +142,12 @@ console对象的上面5种方法，都可以使用printf风格的占位符。不
 
 ### console.trace, 堆栈跟踪相关调试
 
+### console.table
+
+On Chrome you can pretty-print an associative array to the console using console.table(arr)
+
+```js
+    var teams_data = [{team: 'Chelsea', goals: 4}, {team: 'Man. Utd', goals: 3}];
+    console.table(teams_data);
+```
 
