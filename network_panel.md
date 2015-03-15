@@ -1,9 +1,9 @@
 来看个chrome dev tools下的网络请求概览：
-![网络请求概览](./chrome_http_request_list_zps0bc91f49.png)
+![网络请求概览](./images/chrome_http_request_list_zps0bc91f49.png)
 
 网络概览列表的Size Content栏，上边的数值Size表示响应大小，Size大小 = Content大小 + 响应头大小， Content表示响应内容实际大小，比如浏览器请求了一个实际尺寸为61093字节的文件，那么这里Content的值便为61093byte ÷ 1024 ≈ 59.7KB，Size值不一定大于Content的值，当我们在开启Gzip压缩的情况下Size的大小很可能小于Content的大小，开启Gzip后，尽管服务器没有直接告诉我们响应内容的Content-Length大小，但是浏览器拿到压缩后的响应内容是可以间接的反向计算出响应内容的原始大小的，还有一种情况是Content使用的是本地缓存，也就是服务器返回304状态码告诉浏览器继续使用缓存中的内容，Size的大小只是响应头的大小，Content大小为从缓存中读取的响应内容的大小。 当我们的光标移动到HTTP请求的timeline上时会显示网络请求时间花费的详细信息，如图：
 
-![请求花费时长](./chrome_http_timeline_detail_zps04cb8057.png)
+![请求花费时长](./images/chrome_http_timeline_detail_zps04cb8057.png)
 
 这里涉及到几个名词，下面解释下Chrome NetWork Timeline状态名词的意义：
 

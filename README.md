@@ -14,4 +14,6 @@ resources面板可以告诉提供给我们的信息请看[resources panel](./res
 
 audits面板可以告诉提供给我们的信息请看[audits panel](./audits_panel.md)
 
+chrome扩展开发指南[chrome extention development ](./chrome_extention.md)
+
 ### 参考资源
